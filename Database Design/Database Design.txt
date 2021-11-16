@@ -1,0 +1,66 @@
+ 
+Product Collection
+
+ (
+{"productName": "Apple Macbook Pro 2018",
+        "image": "macbook-pro-15.jpg",
+        "cpu": "6-core Intel i7, 8th generation",
+        "ram": "16GB",
+        "storage": "1TB GB SSD",
+        "screen": "15-inch Retina display",
+        "price": "799,99",
+        "description": "If you're after the latest and greatest laptop from Apple, we suggest you look into the 2018 model of the 15-inch MacBook Pro with Touch Bar. The headline Touch Bar – a thin OLED display at the top of the keyboard which can be used for any number of things, whether that be auto-suggesting words as you type or offering Touch ID so you can log in with just your fingerprint – is of course included. It's certainly retained Apple's sense of style, but it comes at a cost. This is a pricey machine, so you may want to consider one of the Windows alternatives. But, if you're a steadfast Apple diehard, this is definitely the best laptop for you!"
+    })
+
+
+Processor Collection
+
+({
+"Name":"Intel i5 9th Gen",
+"Price":"21,000"})
+
+
+RAM Collection
+
+({
+"Name":"8 GB DDR5",
+"Price":"7,000"})
+
+Storage Collection
+
+({
+"Name":"1 TB SSD",
+"Price":"11,000"})
+
+Graphics Collection
+
+({
+"Name":"4 GB NVIDIA GTX",
+"Price":"6,000"})
+
+Order Collection
+
+({
+"product_Name": "Apple Macbook Pro 2018",
+"Processor_Name":"Intel i5 9th Gen",
+"Processor_Price":"20,000",
+"RAM_Name":"8 GB DDR5",
+"RAM_Price":"10,000",
+"Storage_Name":"1 TB SSD",
+"Storage_Price":"13,000",
+"Graphics_Name":"4 GB NVIDIA GTX",
+"Graphics_Price":"2,000",
+"Customer_Name":"Hemanth",
+"Email":"shark@ocean@gmail.com",
+"Address":"Anna Nagar",
+"Phone":"7558186699",
+"Price":"92,000",
+"Date":"12-02-2021",
+"Invoice_ID":"T4-2021-001"})
+
+
+
+
+
+
+
