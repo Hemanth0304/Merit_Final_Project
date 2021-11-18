@@ -1,0 +1,21 @@
+ 
+
+<h2 class="product-head">
+    Products
+</h2>
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let i of productList">
+            <div class="card col-md-4">
+                <img src="{{i.image}}" alt="" class="">
+               <h5> {{i.productName}}  </h5>
+               <p style="white-space:nowrap;overflow: hidden;text-overflow:ellipsis;max-width: 100ch;">  {{i.description}}   </p>
+               <p>  <strong> ₹ {{i.price}}</strong>   </p>
+               <button  class="btn btn-primary" (click)= addtocart(i) >   Buy Now  </button>
+    
+    
+            </div> 
+
+        </ng-container>
+        
+    </div></div>

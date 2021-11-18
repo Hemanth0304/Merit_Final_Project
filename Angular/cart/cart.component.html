@@ -1,0 +1,157 @@
+<div id="about" class="layout_padding about_section">
+    <form [formGroup]="billDetails" (ngSubmit)="onSubmit()">
+    <div class="container">
+        <div class="container">
+
+           
+            <div  class="row" *ngFor="let item of product;let i = index">
+               
+                <div class="col-md-6" *ngIf="i > product.length -2">
+                    <div><img src="{{item.image}}" style="max-width: 80%; margin-top:90px;"></div>
+                </div>
+
+                
+                <div class="col-md-6"  *ngIf="i > product.length -2">
+                    <input type="text" style="color:white; border: 0px solid rgb(255, 255, 255);" class="nginput" formControlName="ProductName" value = "{{this.pr}}" />
+                    <input type="text" style="color:white; border: 0px solid rgb(255, 255, 255);" formControlName="productTotal" value = "{{this.tr}}" />
+                    <h1 class="about_text"><strong>{{item.productName}} </strong></h1>
+                    <h5> {{item.cpu}}</h5>
+                    <h5> {{item.ram}}</h5>
+                    <h5>{{item.storage}}</h5>
+                    <h5>{{item.screen}}</h5>
+                    <h3>{{item.price}}</h3>
+                    <h3>{{this.tr}}</h3>
+                    
+                    <p class="about_taital">{{item.description}}</p>
+                    <div class="quantity">
+                        <button class="plus-btn"  type="button">+</button> &nbsp;
+                      
+                      
+                    
+                     1
+                      &nbsp;
+                        <button class="minus-btn" type="button">-</button>
+                      </div>
+                      <div></div>
+                   
+                      
+                      <button class="read_more" type="button" >Buy Now</button>
+                  
+                </div>
+
+           
+            </div>
+              
+        </div>
+        
+    </div>
+</form>
+    
+</div>
+
+
+<!-- Customer Details Form -->
+
+
+<div class="card m-3">
+    <h5 class="card-header">Billing Details</h5>
+    <div class="card-body">
+        <form [formGroup]="billDetails" (ngSubmit)="onSubmit()">
+        <div class="form-row">
+          <div class="form-group col">
+            <label>Title</label>
+            <select
+              formControlName="title"
+              class="form-control"
+           
+            >
+              <option value=""></option>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Miss">Miss</option>
+              <option value="Ms">Ms</option>
+            </select>
+            <!-- <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+              <div *ngIf="f.title.errors.required">Title is required</div>
+            </div> -->
+          </div>
+          <div class="form-group col-5">
+            <label>First Name</label>
+            <input
+              type="text"
+              formControlName="firstName"
+              class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"
+            />
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+              <div *ngIf="f.firstName.errors.required">
+                First Name is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-5">
+            <label>Last Name</label>
+            <input
+              type="text"
+              formControlName="lastName"
+              class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }"
+            />
+            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+              <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            type="text"
+            formControlName="email"
+            class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+          />
+          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors.required">Email is required</div>
+            <div *ngIf="f.email.errors.email">
+              Email must be a valid email address
+            </div>
+          </div>
+        </div>
+      
+        <button class="read_more" >Buy Now</button>
+      
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ng-container *ngIf= "false"> -->
+    <!-- <div class="div container">
+        <div class="card">
+            <h5 class="card-title"> Your Cart Page </h5> 
+        </div>
+        <div class="center">
+            <img src="
+            https://drive.google.com/uc?export=view&id=1XxbK5BftrY2MSuSthsso3xjRIsB_WCAN" alt="">
+            <h4>
+                Seems Your Cart is empty !!!
+            </h4>
+      
+        <button class="btn btn-primary"> Shop Now</button>
+        </div>
+    </div> -->
+<!-- 
+</ng-container> -->

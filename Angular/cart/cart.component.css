@@ -1,0 +1,107 @@
+.card{
+     height:65vh;
+     margin:25px;
+     padding:25px;
+}
+.center img{
+    height:250px;
+    width:255px;
+
+     
+}
+
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.nginput input[type=text]{
+  color:white;
+  border: 0px solid rgb(255, 255, 255);
+}
+
+/* Display */
+
+.about_text {
+    width: 100%;
+    float: left;
+    color: mediumpurple;
+    font-size: 45pt;
+    border-bottom: 3px solid #111111;
+    margin-top: 65px;
+}
+
+.about_taital {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    float: left;
+    color: #686666;
+    font-size: 14pt;
+    margin-left: 0px;
+    padding-top: 20px;
+}
+.read_more {
+    width: 30%;
+    float: left;
+    background-color: mediumpurple;
+    height: 50px;
+    font-size: 16pt;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 0px;
+    color: #fff;
+}
+
+    .read_more :hover {
+        color: #000
+    }
+
+
+    /* Quantity */
+    .quantity {
+        padding-top: 20px;
+        margin-right: 60px;
+      }
+.quantity input {
+        -webkit-appearance: none;
+        border: none;
+        text-align: center;
+        width: 32px;
+        font-size: 16px;
+        color: #43484D;
+        font-weight: 300;
+      }
+      button[class*=btn] {
+        width: 30px;
+        height: 30px;
+        background-color: #ffffff;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+      }
+
+      button[class*=btn]:hover{
+        width: 30px;
+        height: 30px;
+        background-color: #ff8888;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+      }
+      .minus-btn img {
+        margin-bottom: 3px;
+      }
+      .plus-btn img {
+        margin-top: 2px;
+      }
+       
+      button:focus,
+      input:focus {
+        outline:0;
+      }
